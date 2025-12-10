@@ -5,7 +5,7 @@
 </p>
 
 <p align="center">
-  <img src="images/mywebsite.png" alt="My website preview" width="600">
+  <img src="mywebsite.png" alt="My website preview" width="600">
 </p>
 
 ✨ features
