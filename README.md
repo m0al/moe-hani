@@ -11,31 +11,43 @@
 ✨ features
 
 • Fully responsive design
+
 • Smooth scroll + animations
+
 • Clean & modern UI
+
 • Interactive hero + reveal animations
+
 • Projects, About, Skills, and Contact sections
-• Pure HTML, CSS, and JavaScript — no frameworks
 
 ⸻
 
-🛠 tech stack
+<h3>🎨 Color Palette</h3>
 
-• HTML5
-• CSS3
-• JavaScript (ES6+)
+<table>
+  <tr>
+    <th>Color</th>
+    <th>Hex</th>
+  </tr>
 
-⸻
+  <tr>
+    <td>Black Russian (Background)</td>
+    <td>#0b132b</td>
+  </tr>
 
-🎨 color codes
+  <tr>
+    <td>Bright Gray (Text)</td>
+    <td>#e6edf3</td>
+  </tr>
 
-Token	Hex / RGBA
-Background	#0b132b
-Text	#e6edf3
-Muted	#9aa4b2
-Accent	#7c3aed
-Accent RGB	124, 58, 237
-Hover	rgba(124,58,237,0.16)
-Line	rgba(230,237,243,0.08)
+  <tr>
+    <td>Rock Blue (Muted)</td>
+    <td>#9aa4b2</td>
+  </tr>
 
+  <tr>
+    <td>Blue Violet (Accent)</td>
+    <td>#7c3aed</td>
+  </tr>
+</table>
 
