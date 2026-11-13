@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#202321"/>
+  <text x="80" y="300" font-family="Georgia, serif" font-size="72" fill="#f1ede5">Mohammed Hani</text>
+  <text x="80" y="360" font-family="Arial, sans-serif" font-size="28" fill="#c18b55" letter-spacing="1">Software Engineer &amp; Full-Stack Developer</text>
+  <rect x="80" y="400" width="60" height="4" fill="#c18b55"/>
+</svg>

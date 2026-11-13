@@ -1,0 +1,165 @@
+:root {
+  /* Obsidian, Champagne, Gold & Burgundy — exclusive brand palette */
+  --color-champagne: #f1ede5;
+  --color-champagne-rgb: 241, 237, 229;
+  --color-obsidian: #202321;
+  --color-obsidian-rgb: 32, 35, 33;
+  --color-gold: #c18b55;
+  --color-gold-rgb: 193, 139, 85;
+  --color-burgundy: #722f3e;
+  --color-burgundy-rgb: 114, 47, 62;
+
+  /* Tonal variations derived from the four brand colors only */
+  --color-champagne-dim: #e7e1d4;
+  --color-champagne-deep: #d9d2c0;
+  --color-obsidian-soft: #2b2f2c;
+  --color-obsidian-line: rgba(241, 237, 229, 0.12);
+  --color-gold-soft: rgba(193, 139, 85, 0.16);
+  --color-gold-strong: #a9743f;
+  --color-burgundy-soft: rgba(114, 47, 62, 0.14);
+  --color-burgundy-strong: #5c2531;
+
+  /* Semantic surface tokens (light = default site surface) */
+  --surface: var(--color-champagne);
+  --surface-raised: #ffffff;
+  --ink: var(--color-obsidian);
+  --ink-soft: rgba(32, 35, 33, 0.64);
+  --ink-faint: rgba(32, 35, 33, 0.4);
+  --hairline: rgba(32, 35, 33, 0.12);
+  --accent: var(--color-gold);
+  --accent-strong: var(--color-gold-strong);
+  --accent-secondary: var(--color-burgundy);
+  --accent-secondary-strong: var(--color-burgundy-strong);
+
+  /* Dark (obsidian) sections */
+  --surface-dark: var(--color-obsidian);
+  --ink-on-dark: var(--color-champagne);
+  --ink-on-dark-soft: rgba(241, 237, 229, 0.66);
+  --ink-on-dark-faint: rgba(241, 237, 229, 0.4);
+  --hairline-on-dark: rgba(241, 237, 229, 0.14);
+
+  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
+  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+  --ease-premium: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-soft: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --container-max: 1280px;
+  --gutter: clamp(20px, 5vw, 80px);
+
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+body {
+  background: var(--surface);
+  color: var(--ink);
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  line-height: 1.08;
+  letter-spacing: -0.01em;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-obsidian);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: absolute;
+  top: -48px;
+  left: 16px;
+  z-index: 300;
+  background: var(--color-obsidian);
+  color: var(--color-champagne);
+  padding: 10px 18px;
+  border-radius: 2px;
+  font-size: 0.85rem;
+  transition: top 0.25s var(--ease-soft);
+}
+
+.skip-link:focus-visible {
+  top: 16px;
+}
+
+/* Shared utility: section container */
+.container {
+  width: 100%;
+  max-width: var(--container-max);
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--accent-strong);
+  font-weight: 500;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}

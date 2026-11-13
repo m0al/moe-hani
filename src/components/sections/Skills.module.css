@@ -1,0 +1,64 @@
+.skills {
+  background: var(--surface-dark);
+  color: var(--ink-on-dark);
+  padding-block: clamp(80px, 12vh, 160px);
+}
+
+.skills .heading {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  margin-block: 16px 56px;
+  color: var(--ink-on-dark);
+  max-width: 18ch;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(24px, 4vw, 48px);
+}
+
+.column {
+  border-top: 1px solid var(--hairline-on-dark);
+  padding-top: 24px;
+}
+
+.columnTitle {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--color-gold);
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.chipList {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.chip {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  color: var(--ink-on-dark-soft);
+  transition: color 0.3s var(--ease-soft), transform 0.3s var(--ease-soft);
+}
+
+.chip:hover {
+  color: var(--ink-on-dark);
+  transform: translateX(4px);
+}
+
+@media (max-width: 960px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 40px;
+  }
+}
+
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}

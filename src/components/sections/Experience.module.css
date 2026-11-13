@@ -1,0 +1,141 @@
+.experience {
+  background: var(--surface);
+  padding-block: clamp(80px, 12vh, 160px);
+}
+
+.eyebrow {
+  color: var(--color-burgundy);
+}
+
+.heading {
+  font-size: clamp(1.9rem, 3.4vw, 2.6rem);
+  margin-block: 16px 56px;
+  color: var(--ink);
+}
+
+.timeline {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2px 1fr;
+  gap: clamp(24px, 4vw, 56px);
+}
+
+.track {
+  position: relative;
+  background: var(--hairline);
+  width: 2px;
+}
+
+.progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--accent-strong);
+  transform-origin: top;
+  transform: scaleY(0);
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(40px, 6vh, 72px);
+}
+
+.item {
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 5px 12px;
+  border-radius: 2px;
+  margin-bottom: 14px;
+}
+
+.badgeEdu {
+  background: var(--color-gold-soft);
+  color: var(--accent-strong);
+}
+
+.badgeWork {
+  background: var(--color-burgundy-soft);
+  color: var(--accent-secondary-strong);
+}
+
+.itemTitle {
+  font-size: 1.4rem;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.itemOrg {
+  font-size: 1rem;
+  color: var(--ink);
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.itemPeriod {
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+  letter-spacing: 0.05em;
+  margin-bottom: 12px;
+}
+
+.itemDesc {
+  color: var(--ink-soft);
+  font-size: 0.98rem;
+  line-height: 1.7;
+  max-width: 60ch;
+}
+
+.courses {
+  margin-top: clamp(56px, 8vh, 96px);
+  padding-top: 40px;
+  border-top: 1px solid var(--hairline);
+}
+
+.coursesLabel {
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+  margin-bottom: 18px;
+}
+
+.courseList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.courseLink {
+  display: inline-block;
+  font-size: 0.88rem;
+  padding: 9px 16px;
+  border: 1px solid var(--hairline);
+  border-radius: 2px;
+  color: var(--ink-soft);
+  transition: color 0.3s var(--ease-soft), border-color 0.3s var(--ease-soft);
+}
+
+.courseLink:hover {
+  color: var(--accent-strong);
+  border-color: var(--accent-strong);
+}
+
+@media (max-width: 640px) {
+  .timeline {
+    grid-template-columns: 1fr;
+  }
+
+  .track {
+    display: none;
+  }
+}
